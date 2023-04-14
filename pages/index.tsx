@@ -55,8 +55,8 @@ export default function Page() {
   return (
     <>
       <NextSeo
-        title="OpenAI Balance"
-        description="Fetch your OpenAI Balance in one click."
+        title="OpenAI余额查询"
+        description="一键获取OpenAI余额."
         openGraph={{
           images: [
             {
@@ -94,10 +94,10 @@ export default function Page() {
         {data && (
           <div>
             <div className="text-center text-xl">
-              Billing From: {data.startDate} to {data.endDate}
+              查询时间段: {data.startDate} to {data.endDate}
             </div>
             <div className="text-center text-2xl font-bold pt-2">
-              Total Usage: ${data.totalUsage}
+              总使用量: ${data.totalUsage}
             </div>
           </div>
         )}
@@ -105,7 +105,7 @@ export default function Page() {
         <footer className="py-20 text-center text-zinc-500 text-sm">
           &copy; 2023{' '}
           <a
-            href="https://github.com/savokiss"
+            href="https://www.baidu.com"
             target="_blank"
             rel="nofollow noopenner"
             className=" text-blue-600 hover:underline"
@@ -114,7 +114,7 @@ export default function Page() {
           </a>
         </footer>
 
-        <GithubCorner href="https://github.com/savokiss/openai-balance" />
+       
       </div>
     </>
   );
